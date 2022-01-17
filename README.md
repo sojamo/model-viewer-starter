@@ -6,40 +6,19 @@ The following is a step-by-step run down to how to get started with setting up a
 
 ## Tools
 
-- [VS Code](https://code.visualstudio.com/) which may be the most used code editor in the industry for web and cloud application development. VS Code comes with a live preview extension as well.
-- After you have installed VS Code, load and enable the Live Server extension which you can search from the Extensions 
+- [VS Code](https://code.visualstudio.com/) one of the most used code editor in the industry for web and cloud application development. VS Code comes with a live preview extension as well which needs to be installed, see next point.
+- After you have installed VS Code, load and enable the Live Server extension which you can search from the Extensions Tab.
 
 
 ## Step-by-step
 
-- Download the VS Code code editor (see Tools), then open VS Code and install the Live Server extension
-- Download code template from [github repo]()
-- Open .zip file after download and place the model-viewer-starter folder where you can remeber and find it
-- Drag model-viewer-starter folder over the VS Code Icon in your Dock, the model-viewer-starter project will open and you can see the file strcuture on the left side of the window
-- At the bottom of the window you can find a click-area labeled __Go Live__, do click and activate the Live Server and your browser will open the model-viewer-starter web application.
+- __Download__ the VS Code code editor (see Tools), then open VS Code and install the Live Server extension
+- __Download__ code template from [github repo](https://github.com/sojamo/model-viewer-starter/archive/refs/heads/main.zip)
+- __Open .zip__ file after download and place the model-viewer-starter-main folder where you can remember and find it
+- __Drag__ model-viewer-starter-main folder over the VS Code Icon in your Dock, the model-viewer-starter project will open and you can see the file structure on the left side of the window
+- __Go Live__, at the bottom of the window you can find a clickable area labeled __Go Live__, do click and activate the Live Server and your browser will open the model-viewer-starter web application. __Go Live__ by now should have changed to __Port:5500__ (number may vary) this tells you that the local web server for this project is accessible at port 5500 and the address that just opened in your web broswer should read like this http://127.0.0.1:5500 here, 127.0.0.1 s your loop back address, let's find out your local network address in the next step. 
+- __Find__ your local network address (assuming you are on macos), press Alt and click on the wireless-network icon in your top menu bar. You will now see your available networks and the network you are connected to. Here read and note down the IP Address (which should look similar to this example local IP 192.168.10.23)
+- __Test phone__ After you have written down the IP address of your (mac) computer, go to your mobile phone and make sure your wireless connection is connected to the same network as your computer. If this is the case, open a browser and key in the `IP address` of your computer (see previous step) followed by `:` and the `port number` that is used to serve your model-viewer-starter on your local network (for example 192.168.10.23:5500) and then followed by `/public` 
+- Now if you have used and keyed in the correct URL, you should see the model-viewer-starter website on your phone
 
 
-
-
-
-
-
-
-## Origin
-  - [model viewer examples](https://modelviewer.dev/examples/augmentedreality/)
-  - [model-viewer library](https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js)
-  
-## Formats
-  __glb__ A GLB file is a binary version of the glTF 3D format 
-  __hdr__ Radiance HDR file format, see [Paul Bourke's description](http://paulbourke.net/dataformats/pic/)
-
-
-## Helpful resources
-
-- [Using Scene Viewer to display interactive 3D models in AR from an Android app or browser ](https://developers.google.com/ar/develop/java/scene-viewer)
-- [Khronos glTF tutorials](https://github.com/KhronosGroup/glTF-Tutorials)
-  
-
-### WebXR using three.js
-
-- [Create an immersive AR session using WebXR](https://developers.google.com/ar/develop/webxr/hello-webxr)
